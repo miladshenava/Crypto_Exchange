@@ -7,6 +7,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
+import 'package:crypto_exchange_flutter/provider/marketViewProvider.dart';
+
+
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() {
@@ -16,6 +19,8 @@ void main() {
     providers: [
       ChangeNotifierProvider(create: (context) => themeprovider()),
       ChangeNotifierProvider(create: (context) => cryptoDataProvider()),
+      ChangeNotifierProvider(create: (context) => MarketViewProvider())
+
 
     ],
 

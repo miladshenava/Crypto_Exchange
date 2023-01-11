@@ -45,7 +45,7 @@ class bottomNav extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     IconButton(
-                      onPressed: () {controller.animateToPage(1, duration: const Duration(milliseconds: 400), curve: Curves.bounceOut);},
+                      onPressed: () {controller.animateToPage(2, duration: const Duration(milliseconds: 400), curve: Curves.bounceOut);},
                       icon: Icon(Icons.person),
                     ),
                     IconButton(
